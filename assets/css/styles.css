@@ -1,0 +1,344 @@
+@import "https://fonts.googleapis.com/css?family=Lato&display=swap";
+/* Common Styles Start */
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+.img-fluid {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Common Styles End */
+
+/* Header Wrapper Styles Start from here */
+
+.header-wrapper {
+    position: relative;
+}
+
+.top-header {
+    font-size: 1.2rem;
+    color: #000;
+    background: #f1f8fa;
+    border-bottom: 0.1rem solid #e8e8e8;
+}
+
+.top-header-inner {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0.1rem 1.5rem;
+}
+
+.top-header-inner .top-items li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.top-header-inner .top-items li a {
+    text-decoration: underline;
+    color: #000;
+    font-weight: bold;
+}
+
+.brand-logo {
+    width: 18rem;
+    margin: 0 auto;
+}
+
+.mobile-menu-icon {
+    font-size: 2.6rem;
+    cursor: pointer;
+}
+
+.main-header {
+    background: #447fc1;
+}
+
+.main-header-items {
+    padding: 1.5rem 0;
+    margin: 0;
+}
+
+.main-header .main-item {
+    display: inline-block;
+    padding: 0 0 0 0.5rem;
+}
+
+.main-header .main-item .item-link {
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 0 1.5rem;
+}
+
+.main-header .main-item .item-link.active {
+    color: #e0b778;
+}
+
+.menu-overlay {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    z-index: 99;
+}
+
+/* Header Wrapper Styles Ends from here */
+
+/* Home Banner Styles Start from here */
+
+body .owl-dots {
+    display: none;
+}
+
+.item__inner {
+    width: 100%;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-prev, .owl-next {
+    width: 4rem;
+    height: 4rem;
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: white !important;
+    border-radius: 50% !important;
+    cursor: pointer;
+    outline: none;
+}
+
+.owl-prev {
+    margin-left: 2rem;
+}
+
+.owl-next {
+    margin-right: 2rem;
+}
+
+.owl-prev:hover, .owl-next:hover {
+    background: #000 !important;
+}
+
+.owl-prev span, .owl-next span {
+    font-size: 4.4rem;
+    line-height: 0.5;
+}
+
+.owl-prev span {
+    margin-left: -0.3rem;
+}
+
+.owl-next span {
+    margin-left: 0;
+}
+
+/* Home Banner Styles Ends from here */
+
+/* Best Seller Styles Start from Here */
+
+.best-seller-wrapper {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.best-seller-title:before, .best-seller-title:after {
+    position: absolute;
+    content: "";
+    width: calc(100% /3);
+    height: 0.2rem;
+    background: #7e818c;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.best-seller-title:before {
+    left: 0;
+}
+
+.best-seller-title:after {
+    right: 0;
+}
+
+.best-seller-wrapper .best-seller-title {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.5rem;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.best-seller-item-title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 1.6rem;
+}
+
+.best-seller-wrapper .price {
+    font-size: 1.5rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 18rem;
+}
+
+.best-seller-item .item__inner {
+    width: 23rem;
+    height: 40rem;
+    margin: 0 auto;
+    background: #ecf3fd;
+    position: relative;
+}
+
+.best-seller-item .item__inner img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.best-seller-item .item-text {
+    width: 23rem;
+    margin: 0 auto;
+}
+
+.best-seller-wrapper .special-price {
+    font-weight: bold;
+}
+
+.best-seller-wrapper .price .retail-price {
+    color: #7e818c;
+    opacity: 0.7;
+    font-size: 90%;
+}
+
+.best-seller-wrapper .price .offer {
+    font-size: 1.2rem;
+    color: #B12704;
+}
+
+/* Best Seller Styles Ends from Here */
+
+/* Media Query Start from Here */
+
+@media(max-width: 1200px) {
+    .top-header-inner {
+        display: block;
+    }
+    .top-header-inner .top-items {
+        display: none;
+    }
+}
+
+@media (max-width:76.8rem) {
+    .brand-logo {
+        margin: 0;
+    }
+    .header-logo-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        border-bottom: 1px solid #e8e8e8;
+    }
+    .main-header {
+        position: absolute;
+        width: 30rem;
+        top: 0;
+        left: -70rem;
+        transition: all 0.3s ease-in-out;
+        z-index: 999;
+    }
+    .main-header .main-item {
+        display: list-item;
+        padding: 1.5rem 0;
+        list-style: none;
+        background: transparent;
+        cursor: pointer;
+    }
+    .main-header .main-item:hover {
+        background: #e0b778;
+    }
+    .main-header .main-item .item-link.active {
+        color: #fff;
+    }
+    .menu-open .main-header {
+        left: 0;
+    }
+    .menu-open .menu-overlay {
+        display: block;
+    }
+    .mobile-menu-icon {
+        z-index: 999;
+    }
+    .best-seller-title:before, .best-seller-title:after {
+        width: calc(100% /3 - 6rem);
+    }
+}
+
+@media (min-width:769px) {
+    .mobile-menu-icon {
+        display: none;
+    }
+    .main-header .main-item .item-link:hover {
+        color: #e0b778;
+    }
+}
+
+@media screen and (max-width: 60rem) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 60rem) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
