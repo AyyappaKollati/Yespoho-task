@@ -279,6 +279,7 @@ body .owl-dots {
         left: -70rem;
         transition: all 0.3s ease-in-out;
         z-index: 999;
+        height: 100vh;
     }
     .main-header .main-item {
         display: list-item;
